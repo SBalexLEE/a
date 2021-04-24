@@ -78,8 +78,8 @@ SELECT count(*) FROM website_item WHERE web_item = '/assets/img/release-schedule
 ```
 SELECT count(*) FROM access_log WHERE ip = '10.207.188.188';
 ```
-# for porblem 3 & 4 we used the Cassandra Python driver https://github.com/datastax/python-driver
-# to run from our vm cc-project-7 
+#for porblem 3 & 4 we used the Cassandra Python driver https://github.com/datastax/python-driver
+#to run from our vm cc-project-7 
 #problem 3
 ```
 python3 part3_prob3.py
