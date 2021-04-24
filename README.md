@@ -1,4 +1,4 @@
-
+# Part 1: Setting up Cassandra
 # Part 2: Import Data into Cassandra
 
 
@@ -75,6 +75,8 @@ SELECT * FROM access_log LIMIT 20;
 SELECT * FROM website_item LIMIT 20;
 ```
 ![image](https://github.com/SBalexLEE/a/blob/main/Picture2.png)
+
+# Part 3: Operate Data in Cassandra 
 
 #problem 1
 ```
