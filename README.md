@@ -2,7 +2,9 @@
 # Part 2: Import Data into Cassandra
 
 
-To import the access logs into Cassandra, we created one keyspace, “mini_proj_3”, and a table, “access_log”, in Cassandra. After importing the data, we ran simple query. 
+To import the access logs into Cassandra, we created one keyspace, “mini_proj_3”, and a table, “access_log”, in Cassandra. 
+
+After importing the data, we ran simple query. 
 
 #Key Space
 
