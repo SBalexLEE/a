@@ -74,6 +74,7 @@ SELECT * FROM website_item LIMIT 20;
 ```
 SELECT count(*) FROM website_item WHERE web_item = '/assets/img/release-schedule-logo.png\';
 ```
+![image](https://github.com/SBalexLEE/a/blob/main/Picture2.png)
 
 #problem 2
 ```
