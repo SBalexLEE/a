@@ -2,10 +2,10 @@
 
 #Key Space
 #create the Keyspace
-"'''"
+```
 CREATE KEYSPACE mini_proj_3
     WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
-"'''"
+```
 
 #use keyspace
 use mini_proj_3;
