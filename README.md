@@ -74,6 +74,7 @@ SELECT * FROM website_item LIMIT 20;
 ```
 SELECT count(*) FROM website_item WHERE web_item = '/assets/img/release-schedule-logo.png\';
 ```
+
 #problem 2
 ```
 SELECT count(*) FROM access_log WHERE ip = '10.207.188.188';
