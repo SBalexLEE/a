@@ -1,5 +1,5 @@
 
-# Part 2
+# Part 2: Import Data into Cassandra
 
 #Key Space
 
