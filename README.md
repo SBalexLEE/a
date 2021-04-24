@@ -18,6 +18,7 @@ use mini_proj_3;
 ```
 
 #create access_log table
+
 ```
 CREATE TABLE access_log (
 	ip text,
@@ -92,6 +93,7 @@ SELECT count(*) FROM access_log WHERE ip = '10.207.188.188';
 ![image](https://github.com/SBalexLEE/a/blob/main/Picture4.png)
 
 #for porblem 3 & 4 we used the Cassandra Python driver https://github.com/datastax/python-driver
+
 #to run from our vm cc-project-7 
 
 #problem 3
