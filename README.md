@@ -34,8 +34,6 @@ COPY access_log (IP , other_1 , other_2 , time , time2 , web_item , other_3, oth
 #get missing access_logs that didn't get copied in first round
 ```
 ALTER TABLE access_log ADD other_5 text;
-```
-```	
 COPY access_log (IP , other_1 , other_2 , other_5, time , time2 , web_item , other_3, other_4) FROM '/home/ubuntu/dom/access_log' WITH DELIMITER=' ';	
 ```
 #drop unneeded columns
