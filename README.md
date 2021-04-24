@@ -1,6 +1,8 @@
 
+# Part 2
 
 #Key Space
+
 #create the Keyspace
 ```
 CREATE KEYSPACE mini_proj_3
