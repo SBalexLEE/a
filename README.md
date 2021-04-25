@@ -79,8 +79,7 @@ SELECT * FROM website_item LIMIT 20;
 ```
 ![image](https://github.com/SBalexLEE/a/blob/main/Picture2.png)
 
-![image](
-https://github.com/SBalexLEE/cloud_project3/blob/main/Picture7.png)
+![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture7.png)
 
 # Part 3: Operate Data in Cassandra 
 
