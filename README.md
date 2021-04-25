@@ -1,4 +1,9 @@
 # Part 1: Setting up Cassandra
+The Cassandra setup is configured on top of a three-node cluster. After installing cassandra on the each node, made them work together.
+
+
+![image](https://github.com/SBalexLEE/a/blob/main/Picture1.png)
+
 # Part 2: Import Data into Cassandra
 
 
