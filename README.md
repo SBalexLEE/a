@@ -83,14 +83,14 @@ SELECT * FROM website_item LIMIT 20;
 
 # Part 3: Operate Data in Cassandra 
 
-#problem 1
+* problem 1
 ```
 SELECT count(*) FROM website_item WHERE web_item = '/assets/img/release-schedule-logo.png\';
 ```
 ![image](https://github.com/SBalexLEE/a/blob/main/Picture3.png)
 
 
-#problem 2
+* problem 2
 ```
 SELECT count(*) FROM access_log WHERE ip = '10.207.188.188';
 ```
@@ -98,14 +98,14 @@ SELECT count(*) FROM access_log WHERE ip = '10.207.188.188';
 
 #for porblem 3 & 4 we used the Cassandra Python driver (https://github.com/datastax/python-driver) to run from our vm cc-project-7 
 
-#problem 3
+* problem 3
 ```
 python3 part3_prob3.py
 ```
 
 ![image](https://github.com/SBalexLEE/a/blob/main/Picture5.png)
 
-#problem 4
+* problem 4
 ```
 python3 part3_prob4.py
 ```
