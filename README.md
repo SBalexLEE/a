@@ -40,7 +40,7 @@ sudo service cassandra start
 nodetool status
 ```
 
-![image](https://github.com/SBalexLEE/a/blob/main/Picture1.png)
+![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture1.png)
 
 # Part 2: Import Data into Cassandra
 
@@ -116,7 +116,7 @@ COPY website_item (ip,time,other_1, web_item, other_2) FROM 'web_item.csv' WITH 
 SELECT * FROM access_log LIMIT 20;
 SELECT * FROM website_item LIMIT 20;
 ```
-![image](https://github.com/SBalexLEE/a/blob/main/Picture2.png)
+![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture2.png)
 
 ![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture7.png)
 
@@ -126,14 +126,14 @@ SELECT * FROM website_item LIMIT 20;
 ```
 SELECT count(*) FROM website_item WHERE web_item = '/assets/img/release-schedule-logo.png\';
 ```
-![image](https://github.com/SBalexLEE/a/blob/main/Picture3.png)
+![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture3.png)
 
 
 ### 2. Problem 2
 ```
 SELECT count(*) FROM access_log WHERE ip = '10.207.188.188';
 ```
-![image](https://github.com/SBalexLEE/a/blob/main/Picture4.png)
+![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture4.png)
 
 For porblem 3 & 4 we used the Cassandra Python driver (https://github.com/datastax/python-driver) to run from our vm cc-project-7 
 
@@ -142,11 +142,11 @@ For porblem 3 & 4 we used the Cassandra Python driver (https://github.com/datast
 python3 part3_prob3.py
 ```
 
-![image](https://github.com/SBalexLEE/a/blob/main/Picture5.png)
+![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture5.png)
 
 ### 4. Problem 4
 ```
 python3 part3_prob4.py
 ```
 
-![image](https://github.com/SBalexLEE/a/blob/main/Picture6.png)
+![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture6.png)
