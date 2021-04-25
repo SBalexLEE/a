@@ -1,5 +1,36 @@
 # Part 1: Setting up Cassandra
 The Cassandra setup is configured on top of a three-node cluster. After installing cassandra on the each node, made them work together.
+### 1. Setup on Individual Nodes
+
+```
+sudo apt-get install cassandra
+```
+### 2. Start Cassandra and check the status
+```
+sudo service cassandra start
+sudo service cassandra status
+```
+### 3. Configure Cassandra nodes to make them work together
+Edit the configuration file cassandra.yaml on each 3 nodes.
+
+```
+cluster_name: '2750 Cluster'
+seeds: "10.11.12.96"
+listen_address: 10.11.12.96
+rpc_address: 10.11.12.96
+```
+```
+cluster_name: '2750 Cluster'
+seeds: "10.11.13.38"
+listen_address: 10.11.13.38
+rpc_address: 10.11.13.38
+```
+```
+cluster_name: '2750 Cluster'
+seeds: "10.11.12.96"
+listen_address: 10.11.13.109
+rpc_address: 10.11.13.109
+```
 
 
 ![image](https://github.com/SBalexLEE/a/blob/main/Picture1.png)
