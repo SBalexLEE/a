@@ -31,7 +31,14 @@ seeds: "10.11.12.96"
 listen_address: 10.11.13.109
 rpc_address: 10.11.13.109
 ```
-
+### 4. Start Cassandra on all nodes
+```
+sudo service cassandra start
+```
+### 5. Check the status of the clusters
+```
+nodetool status
+```
 
 ![image](https://github.com/SBalexLEE/a/blob/main/Picture1.png)
 
