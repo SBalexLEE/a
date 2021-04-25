@@ -4,9 +4,7 @@
 
 To import the access logs into Cassandra, we created one keyspace, “mini_proj_3”, and a table, “access_log”, in Cassandra. After importing the data, we ran simple query. 
 
-#Key Space
-
-#create the Keyspace
+### 1.create the Keyspace
 ```
 CREATE KEYSPACE mini_proj_3
     WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
