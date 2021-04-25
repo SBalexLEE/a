@@ -4,18 +4,18 @@
 
 To import the access logs into Cassandra, we created one keyspace, “mini_proj_3”, and a table, “access_log”, in Cassandra. After importing the data, we ran simple query. 
 
-### 1.create the Keyspace
+### 1. Create the Keyspace
 ```
 CREATE KEYSPACE mini_proj_3
     WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
 ```
 
-#use keyspace
+### 2. Use keyspace
 ```
 use mini_proj_3;
 ```
 
-#create access_log table
+### 3. Create access_log table
 
 ```
 CREATE TABLE access_log (
@@ -30,17 +30,17 @@ CREATE TABLE access_log (
 	PRIMARY KEY(IP, time, web_item));
 ```
 
-#copy data to table	
+### 4. Copy data to table	
 ```
 COPY access_log (IP , other_1 , other_2 , time , time2 , web_item , other_3, other_4) FROM '/home/ubuntu/dom/access_log' WITH DELIMITER=' ';
 ```
 
-#get missing access_logs that didn't get copied in first round
+### 5. Get missing access_logs that didn't get copied in first round
 ```
 ALTER TABLE access_log ADD other_5 text;
 COPY access_log (IP , other_1 , other_2 , other_5, time , time2 , web_item , other_3, other_4) FROM '/home/ubuntu/dom/access_log' WITH DELIMITER=' ';	
 ```
-#drop unneeded columns
+### 6. #drop unneeded columns
 ```
 ALTER table access_log DROP other_1;
 ALTER table access_log DROP other_2;
@@ -49,7 +49,7 @@ ALTER table access_log DROP other_4;
 ALTER table access_log DROP other_5;
 ALTER table access_log DROP time2;
 ```
-#new table needed for website items as first primary key to answer questions
+### 7. Create a new table for website items as first primary key to answer questions
 ```
 CREATE TABLE website_item (
 	ip text, 
@@ -59,16 +59,16 @@ CREATE TABLE website_item (
 	other_2 text, 
 	PRIMARY KEY(web_item,ip,time,other_1,other_2));
 ```
-#copy data from access_log and remove extra data from website item
+### 8. Copy data from access_log and remove extra data from website item
 ```
 COPY access_log (ip,time,web_item) TO 'web_item.csv' with DELIMITER = ' ' and QUOTE = ' ';
 ```
-#copy back to table
+### 9. Copy back to table
 ```
 COPY website_item (ip,time,other_1, web_item, other_2) FROM 'web_item.csv' WITH DELIMITER = ' ' and QUOTE = '"' and ESCAPE = '*';
 ```
 
-#view tables
+### 10. View tables
 ```
 SELECT * FROM access_log LIMIT 20;
 SELECT * FROM website_item LIMIT 20;
