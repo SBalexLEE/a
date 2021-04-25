@@ -114,10 +114,12 @@ COPY website_item (ip,time,other_1, web_item, other_2) FROM 'web_item.csv' WITH 
 ### 10. View tables
 ```
 SELECT * FROM access_log LIMIT 20;
-SELECT * FROM website_item LIMIT 20;
 ```
 ![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture2.png)
 
+```
+SELECT * FROM website_item LIMIT 20;
+```
 ![image](https://github.com/SBalexLEE/cloud_project3/blob/main/Picture7.png)
 
 # Part 3: Operate Data in Cassandra 
